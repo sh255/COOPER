@@ -1,0 +1,44 @@
+<html>
+<head></head>
+<body>
+<script>  
+function matchPassword() {  
+  var pw1 = document.getElementById("psw");  
+  var pw2 = document.getElementById("psw-repeat");  
+  if(pw1 != pw2)  
+  {   
+    alert("Passwords did not match");  
+  } else {  
+    alert("Password created successfully");  
+  }  
+}  
+</script> 
+
+<form method="post" action="reg.php">
+  
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <b>Name:</b>
+    <input type="text"  name="name" id="name" required>
+    
+    <b>Email</b>
+    <input type="text"  name="email" id="email" required>
+     
+    <b>Password</b>
+    <input type="password"  name="psw" id="psw" required>
+
+    <b>Repeat Password</b>
+    <input type="password"  name="psw-repeat" id="psw-repeat" required>
+    <b>Phone</b>
+    <input type="text"  name="phone" id="phone" required>
+    <hr>
+<button type="submit"  >Register</button>
+</form>
+    
+    
+  </body>
+</html>
+
+  
